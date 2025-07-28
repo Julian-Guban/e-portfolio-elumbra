@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { useLocation, useNavigate } from "react-router-dom";
 import home from "../assets/icons/home_44428.png";
 import dlp from "../assets/icons/business-plan_7111109.png";
@@ -11,10 +11,23 @@ function Header() {
   const location = useLocation();
   const currentPath = location.pathname;
   const navigate = useNavigate();
+  const [show, setShow] = useState(false);
 
   return (
     <header>
-      <div className="flex-row" style={{ paddingInline: "10px" }}>
+      <div className="menu-toggle">
+        <button
+          id="menuToggle"
+          className=" btn btn-secondary p-1"
+          onClick={() => setShow(!show)}
+        >
+          &#9776;
+        </button>
+      </div>
+      <div
+        className={`navbar flex-row ${show && "show"}`}
+        style={{ paddingInline: "10px" }}
+      >
         <button
           className={`btn btn-secondary ${currentPath === "/" && "active"}`}
           onClick={() => navigate("/")}

@@ -59,8 +59,8 @@ function Reflections() {
       <hr />
       <div className="flex-column">
         {reflections.map((reflection, index) => (
-          <div className="topic-siders">
-            <div className="topic-text" key={index}>
+          <div className="topic-siders" key={index}>
+            <div className="topic-text">
               <h3>Week {reflection.week}</h3>
               <p>
                 <b>Observer Feedback </b> – "{reflection.general}"

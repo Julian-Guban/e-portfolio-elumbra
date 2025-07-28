@@ -33,7 +33,7 @@ function Exam() {
       style={{ width: "100%", height: "inherit", paddingInline: "10px" }}
     >
       <div className="flex-column">
-        <div className="flex-column">
+        <div className="tos-topic flex-column">
           <h2>TOS: </h2>
           <img
             src={tos}
@@ -43,7 +43,7 @@ function Exam() {
             loading="lazy"
           />
         </div>
-        <div className="flex-column">
+        <div className="tos-topic flex-column">
           <h2>Topics:</h2>
           <img
             src={topic}
@@ -54,11 +54,11 @@ function Exam() {
           />
         </div>
       </div>
+      <h2>Exam: </h2>
       <div
-        className="flex-row"
+        className="flex-row  exam-container"
         style={{ position: "relative", alignItems: "flex-start" }}
       >
-        <h2>Exam: </h2>
         <div
           className="carousel-container"
           style={{ position: "sticky", top: "0" }}

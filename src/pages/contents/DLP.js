@@ -29,7 +29,7 @@ function DLP() {
       style={{ width: "100%", height: "inherit", paddingInline: "10px" }}
     >
       <div
-        className="flex-row"
+        className="flex-row dlp-header"
         style={{
           width: "100%",
           justifyContent: "space-between",
@@ -44,7 +44,7 @@ function DLP() {
         </button>
       </div>
       <div
-        className="flex-row"
+        className="flex-row dlp-container"
         style={{ position: "relative", alignItems: "flex-start" }}
       >
         <div

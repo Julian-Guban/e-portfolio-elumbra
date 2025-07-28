@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState } from "react";
 import file from "../../assets/PPT_ELUMBRA/PPT_Recyclable Materials.pdf";
 import file0 from "../../assets/PPT_ELUMBRA/PPT_Recyclable Materials-images-0.jpg";
 import file1 from "../../assets/PPT_ELUMBRA/PPT_Recyclable Materials-images-1.jpg";
@@ -39,7 +39,45 @@ import file35 from "../../assets/PPT_ELUMBRA/PPT_Recyclable Materials-images-35.
 import file36 from "../../assets/PPT_ELUMBRA/PPT_Recyclable Materials-images-36.jpg";
 
 function PPT() {
-  const images = [file0, file1, file2, file3, file4, file5, file6, file7, file8, file9, file10, file11, file12, file13, file14, file15, file16, file17, file18, file19, file20, file21, file22, file23, file24, file25, file26, file27, file28, file29, file30, file31, file32, file33, file34, file35, file36];
+  const images = [
+    file0,
+    file1,
+    file2,
+    file3,
+    file4,
+    file5,
+    file6,
+    file7,
+    file8,
+    file9,
+    file10,
+    file11,
+    file12,
+    file13,
+    file14,
+    file15,
+    file16,
+    file17,
+    file18,
+    file19,
+    file20,
+    file21,
+    file22,
+    file23,
+    file24,
+    file25,
+    file26,
+    file27,
+    file28,
+    file29,
+    file30,
+    file31,
+    file32,
+    file33,
+    file34,
+    file35,
+    file36,
+  ];
   const [inc, setInc] = useState(0);
 
   const increment = () => {
@@ -60,7 +98,7 @@ function PPT() {
       style={{ width: "100%", height: "inherit", paddingInline: "10px" }}
     >
       <div
-        className="flex-row"
+        className="flex-row ppt-header"
         style={{
           width: "100%",
           justifyContent: "space-between",
@@ -75,8 +113,13 @@ function PPT() {
         </button>
       </div>
       <div
-        className="flex-column flex-center"
-        style={{ width: "100%", height: "100%", position: "relative", overflow: "hidden" }}
+        className="flex-column flex-center ppt-container"
+        style={{
+          width: "100%",
+          height: "100%",
+          position: "relative",
+          overflow: "hidden",
+        }}
       >
         <div
           className="carousel-container"
@@ -101,13 +144,14 @@ function PPT() {
           </button>
         </div>
         <div
+          className="ppt-preview"
           style={{
             width: "600px",
             flex: 1,
             marginLeft: "20px",
             display: "flex",
             flexDirection: "row",
-            overflow:"auto"
+            overflow: "auto",
           }}
         >
           {images.map((image, index) => (
@@ -140,4 +184,4 @@ function PPT() {
   );
 }
 
-export default PPT
+export default PPT;
