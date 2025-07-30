@@ -31,9 +31,9 @@ function Exam() {
   return (
     <div
       className="flex-center flex-column"
-      style={{ width: "100%", height: "inherit", paddingInline: "10px" }}
+      style={{ width: "100%", height: "inherit", paddingInline: "10px"}}
     >
-      <div className="flex-column">
+      <div className="flex-column flex-center" style={{width: "inherit" }}>
         <div className="tos-topic flex-column">
           <h2>TOS: </h2>
           <img
@@ -73,7 +73,7 @@ function Exam() {
       </div>
 
       <div
-        className="flex-row  exam-container"
+        className="flex-row exam-container"
         style={{ position: "relative", alignItems: "flex-start" }}
       >
         <div

@@ -364,6 +364,16 @@ li {
   display: none;
 }
 
+
+@media (max-width: 1025px) {
+  .App {
+    max-width: fit-content;
+  }
+  .panel{
+    width: inherit;
+  }
+}
+
 @media (max-width: 800px) {
   .App {
     display: flex;
@@ -469,10 +479,22 @@ li {
 }
 
 @media (max-width: 1025px) {
-  .navbar > .btn {
+  .navbar>.btn {
     width: 100px;
     display: flex;
     flex-direction: column !important;
+  }
+
+  .tos-topic>img {
+    width: 500px !important;
+  }
+
+  .slide {
+    align-self: center;
+  }
+
+  .slide>img {
+    width: 450px !important;
   }
 }
 
@@ -486,20 +508,20 @@ li {
     width: 100px !important;
   }
 
-  .slide{
+  .slide {
     align-self: center;
   }
 
   .slide>img {
     width: 200px !important;
   }
-  
-  .ppt-container > .carousel-container > .carousel-track > .slide > img{
-    height: 150px !important;
+
+  .ppt-container>.carousel-container>.carousel-track>.slide>img {
+    height: 130px !important;
   }
 
   .dlp-header,
-  .ppt-header  {
+  .ppt-header {
     flex-direction: column !important;
     align-items: center !important;
     text-align: center;
@@ -511,12 +533,12 @@ li {
     overflow: auto;
   }
 
-  .ppt-container{
+  .ppt-container {
     overflow: auto !important;
     display: flex;
   }
-  
-  .ppt-preview{
+
+  .ppt-preview {
     width: 290px !important;
     height: fit-content !important;
     flex-direction: row !important;
@@ -537,7 +559,7 @@ li {
     justify-content: center;
   }
 
-  .tos-topic > img{
+  .tos-topic>img {
     width: 300px !important;
   }
 
@@ -549,9 +571,13 @@ li {
     height: 70px !important;
   }
 
-  .window > p{
+  .window>p {
     font-size: small;
   }
+
+}
+
+@media (max-width: 350px) {
 
   .item>img {
     width: 70px !important;
@@ -567,11 +593,6 @@ li {
     flex-direction: column !important;
     align-items: center !important;
   }
-
-  .carousel-container{
-    width: fit-content;
-  }
-
 }
 
 /* niche */

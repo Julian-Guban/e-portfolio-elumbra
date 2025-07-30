@@ -28,7 +28,7 @@ function Documentation() {
       </div>
       <hr />
 
-      <div style={{ width: "100%", height: "100%" }}>
+      <div className="flex-center" style={{ width: "100%", height: "100%" }}>
         <div
           className="carousel-container"
           style={{ position: "sticky", top: "0" }}
